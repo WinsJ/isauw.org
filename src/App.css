@@ -1,0 +1,29 @@
+/* Default ISAUW-specific stuff */
+.redBackgroundColor {background-color: #841C1B} /* Change ISAUW's background color */
+
+@import url('https://fonts.googleapis.com/css?family=Encode+Sans:900|Open+Sans:400,700&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    background-color: white;
+}
+
+h1, h2, h3 {
+    font-family: 'Encode Sans', sans-serif;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #841C1B;
+}
+
+a {
+    color: black;
+}
+
+.logo {
+    max-height: 15px;
+    margin: auto;
+}
+

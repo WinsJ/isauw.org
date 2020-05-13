@@ -1,0 +1,259 @@
+/* COMMON */
+
+
+.page {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    html, body {
+        height: 100%;
+        position: relative;
+    }
+
+    body {
+        background-color: #811B16;
+        font-family: 'Open Sans', sans-serif;
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.row, .col, .form-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row {
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 0;
+    text-align: right;
+}
+
+.back, .add-item i, .back a {
+    color: #811B16;
+    font-size: 1.5rem;
+}
+
+h1, h2, h3, #roles a {
+    font-weight: bold;
+}
+
+#hamburger-menu a {
+    font-size: 3rem;
+}
+
+#menu-opts a, .page-title, .section-title {
+    margin-bottom: 1rem;
+}
+
+h2, #user-details * {
+    font-size: 1.5rem;
+}
+
+#user-details {
+    color: #450e0c;
+}
+
+#roles a {
+    color: #450e0c;
+}
+
+header, #menu-opts {
+    left: 0;
+    right: 0;
+}
+
+#hamburger-menu {
+    padding-right: 1rem;
+}
+
+#menu-opts {
+
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: absolute;
+    top: 5.5rem;
+    background-color: #811B16;
+    z-index: 999;
+    padding: 1rem;
+    padding-right: 2rem;
+    box-shadow: 0 5px 5px #00000050;
+}
+
+.text-logo {
+    height: 2.5rem;
+    margin: 1rem;
+}
+
+main {
+    position: relative;
+    padding: 2rem;
+}
+
+.page {
+
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 50px 5px #00000050;
+    margin-bottom: 1rem;
+}
+
+.separator {
+    background-color: #00000012;
+    width: 1px;
+    height: 3rem;
+}
+
+#roles .col {
+    border-bottom: 1px solid #00000020;
+    text-align: center;
+    padding: .75rem;
+}
+
+#roles {
+    background-color: #00000010;
+    border-radius: 20px 20px 0 0;
+    overflow: hidden;
+    padding-bottom: 0;
+}
+
+
+
+/* INNER CONTENT */
+.isauw-logo {
+    height: 5rem;
+}
+
+.p-adjust {
+    padding: 1rem;
+    padding-top: 1.5rem;
+}
+
+.btn-isauw, .btn-isauw:focus {
+    background-color: #811B16;
+    box-shadow: 0 4px 5px 1px #00000050;
+}
+
+.btn-orderStatus, .btn-orderStatus:focus {
+    background-color: white;
+    color: #811B16;
+    box-shadow: 0 4px 5px 1px #00000050;
+}
+
+.btn-isauw:active, .btn-orderStatus {
+    box-shadow: 0 2px 5px 1px #00000080;
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px);
+}
+
+.action-container {
+    padding-top: 1rem;
+}
+
+.form-group {
+    width: 100%;
+}
+
+
+
+/* ADMIN & CUSTOMER */
+.col-3 p {
+    text-align: center;
+}
+
+#user-details *, .section-title p {
+    font-weight: bold;
+    text-align: center;
+    margin: 0.1rem;
+}
+
+.section-title p {
+    font-size: 1.2rem;
+}
+
+.add-item i:active, .remove-item p:active {
+    font-weight: bold;
+}
+
+.back:active {
+    -webkit-transform: scale(1.2);
+    -webkit-transform: translateX(-3px);
+    transform: scale(1.2);
+    transform: translateX(-3px);
+}
+
+.items-container {
+    background-color: #811B16;
+    color: white;
+    border-radius: 10px;
+    padding-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: normal;
+    min-height: 5rem;
+}
+
+.row-input, .input-group {
+    justify-content: center;
+}
+
+#qr-preview {
+    max-width: 100%;
+    margin-bottom: 5%;
+}
+
+.order-items .items-container {
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 5px 5px #00000050;
+    color: #811B16;
+}
+
+.inactive-order-filter {
+    color: #FFFFFF60;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 576px) {
+    .page, .input-group, .items-container {
+        max-width: 80%;
+    }
+
+    #login Form.Control {
+        max-width: 60%;
+    }
+
+    .page {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .text-logo {
+        height: 1.5rem;
+    }
+
+    #hamburger-menu a {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .page {
+        max-width: 80%;
+    }
+
+    .qr-img {
+        width: 60%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .page {
+        max-width: 540px;
+    }
+}
